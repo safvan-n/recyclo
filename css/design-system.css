@@ -1,0 +1,200 @@
+/* ==========================================================================
+   ReCyclo Design System - Exact Brand Tokens
+   Extracted directly from official ReCyclo brand identity & logo
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Brand Core Colors (Exact ReCyclo Logo Palette) */
+  --color-primary: #00A884;             /* Signature Emerald Teal */
+  --color-primary-hover: #008F70;
+  --color-primary-active: #00765C;
+  --color-primary-light: #E6F7F2;       /* Light Mint Tint */
+  --color-primary-surface: #F0FAF7;     /* Ultra-soft surface */
+  --color-primary-glow: rgba(0, 168, 132, 0.22);
+
+  /* Deep Brand Teals (from Logo "Re" & circular ribbon) */
+  --color-brand-dark: #034158;          /* Deep Marine Teal */
+  --color-brand-navy: #022C3A;          /* Deepest Brand Navy */
+  --color-brand-dark-surface: #062833;
+
+  /* Logo Gradient Accents */
+  --color-accent-leaf: #24BD84;         /* Luminous Leaf Green */
+  --color-accent-cyan: #00A5A1;         /* Turquoise Ribbon Accent */
+  --color-accent-mint: #4ADE80;
+
+  /* Semantic Feedback */
+  --color-success: #00A884;
+  --color-success-bg: #E6F7F2;
+  --color-warning: #F59E0B;
+  --color-warning-bg: #FEF3C7;
+  --color-danger: #EF4444;
+  --color-danger-bg: #FEE2E2;
+  --color-info: #0284C7;
+  --color-info-bg: #E0F2FE;
+
+  /* Availability Badges */
+  --badge-available-text: #047857;
+  --badge-available-bg: #D1FAE5;
+  --badge-busy-text: #B45309;
+  --badge-busy-bg: #FEF3C7;
+  --badge-offline-text: #475569;
+  --badge-offline-bg: #F1F5F9;
+
+  /* Neutrals & Typography */
+  --color-text-primary: #0A242B;        /* Deep Charcoal Teal */
+  --color-text-secondary: #4B646D;      /* Medium Slate Teal */
+  --color-text-muted: #7E97A0;          /* Soft Muted */
+  --color-text-inverse: #FFFFFF;
+  --color-text-on-primary: #FFFFFF;
+
+  /* Surfaces & Backgrounds */
+  --color-bg-app: #F3F7F7;
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-elevated: #FFFFFF;
+  --color-border: #E0ECE9;
+  --color-border-subtle: #EEF5F3;
+  --color-border-focus: #00A884;
+  --color-divider: #E8F1EF;
+
+  /* Typography */
+  --font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+
+  /* Font Sizes */
+  --font-size-2xs: 0.6875rem; /* 11px */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.84375rem; /* 13.5px */
+  --font-size-base: 0.9375rem;/* 15px */
+  --font-size-md: 1.0625rem;  /* 17px */
+  --font-size-lg: 1.1875rem;  /* 19px */
+  --font-size-xl: 1.375rem;   /* 22px */
+  --font-size-2xl: 1.625rem;  /* 26px */
+  --font-size-3xl: 2rem;      /* 32px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Spacing */
+  --spacing-3xs: 2px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 40px;
+
+  /* Border Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 30px;
+  --radius-full: 9999px;
+
+  /* Elevation & Shadows */
+  --shadow-xs: 0 1px 2px rgba(3, 65, 88, 0.05);
+  --shadow-sm: 0 2px 6px rgba(3, 65, 88, 0.06);
+  --shadow-md: 0 6px 16px rgba(3, 65, 88, 0.08);
+  --shadow-lg: 0 12px 28px rgba(3, 65, 88, 0.12);
+  --shadow-xl: 0 20px 40px rgba(3, 65, 88, 0.16);
+  --shadow-glow: 0 8px 24px rgba(0, 168, 132, 0.3);
+
+  /* Animation & Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Safe Area Variables */
+  --safe-area-top: 44px;
+  --safe-area-bottom: 34px;
+  --bottom-nav-height: 72px;
+  --header-height: 60px;
+}
+
+/* Global Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family-base);
+  background-color: #0E1E24;
+  color: var(--color-text-primary);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* Common Brand Gradient Utilities */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, var(--color-brand-dark) 0%, #00766B 50%, var(--color-primary) 100%);
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-leaf) 100%);
+}
+
+.bg-subtle-gradient {
+  background: linear-gradient(180deg, var(--color-primary-light) 0%, #FFFFFF 100%);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, var(--color-brand-dark) 0%, var(--color-primary) 50%, var(--color-accent-leaf) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth Focus states */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Scrollbar Styling for Scrollable Panels */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 65, 88, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}

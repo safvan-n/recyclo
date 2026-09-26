@@ -1,0 +1,31 @@
+{
+  "name": "ReCyclo – Turning Waste into Worth",
+  "short_name": "ReCyclo",
+  "description": "Smart waste-management and recycling mobile application.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E1E24",
+  "theme_color": "#00A884",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/recyclo-logo.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg"
+    }
+  ],
+  "categories": ["utilities", "lifestyle", "productivity"],
+  "screenshots": []
+}
